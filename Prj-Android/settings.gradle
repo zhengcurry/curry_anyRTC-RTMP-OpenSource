@@ -1,10 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        // 因为Gradle的Maven仓库在国外, 因此需要使用阿里云的镜像地址
+        maven { url 'https://maven.aliyun.com/repository/public' }
+    }
+}
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://www.jitpack.io' }
-        jcenter() // Warning: this repository is going to shut down soon
+        maven { url "https://jitpack.io" }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        // 因为Gradle的Maven仓库在国外, 因此需要使用阿里云的镜像地址
+        maven { url 'https://maven.aliyun.com/repository/public' }
     }
 }
 rootProject.name = "Prj-Android"

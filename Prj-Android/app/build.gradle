@@ -5,7 +5,7 @@ plugins {
 
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "io.anyrtc.liveplayer"
@@ -43,6 +43,8 @@ android {
     dataBinding {
         enabled = true
     }
+
+    namespace 'io.anyrtc.liveplayer'
 }
 
 dependencies {

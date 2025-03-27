@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         minSdk 19
@@ -42,6 +42,7 @@ android {
     }
     ndkVersion '20.0.5594570'
 
+    namespace 'io.anyrtc.live'
 }
 
 dependencies {

@@ -59,6 +59,8 @@ class PullActivity : AppCompatActivity() {
                     ArLiveDef.ArLivePlayStatus.ArLivePlayStatusStopped->{
                         playStatus.status.set("已停止....")
                     }
+
+                    null -> TODO()
                 }
 
             }
@@ -102,18 +104,18 @@ class PullActivity : AppCompatActivity() {
                 setAnimator.play(animation2).after(animation1).after(1600)
                 setAnimator.setInterpolator(AccelerateDecelerateInterpolator())
                 setAnimator.addListener(object :Animator.AnimatorListener{
-                    override fun onAnimationStart(animation: Animator?) {
+                    override fun onAnimationStart(animation: Animator) {
                     }
 
-                    override fun onAnimationEnd(animation: Animator?) {
+                    override fun onAnimationEnd(animation: Animator) {
                         binding.ivSnapResult.alpha = 0f
                         binding.ivSnapResult.translationX= 0f
                     }
 
-                    override fun onAnimationCancel(animation: Animator?) {
+                    override fun onAnimationCancel(animation: Animator) {
                     }
 
-                    override fun onAnimationRepeat(animation: Animator?) {
+                    override fun onAnimationRepeat(animation: Animator) {
                     }
 
                 })
